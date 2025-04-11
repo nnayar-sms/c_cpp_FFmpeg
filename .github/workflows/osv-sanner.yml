@@ -3,13 +3,13 @@ name: OSV-Scanner Scheduled Scan
 on:
   workflow_dispatch:
   
-# permissions:
-#   # Required to upload SARIF file to CodeQL. See: https://github.com/github/codeql-action/issues/2117
-#   actions: read
-#   # Require writing security events to upload SARIF file to security tab
-#   security-events: write
-#   # Only need to read contents
-#   contents: read
+permissions:
+  # Required to upload SARIF file to CodeQL. See: https://github.com/github/codeql-action/issues/2117
+  actions: read
+  # Require writing security events to upload SARIF file to security tab
+  security-events: write
+  # Only need to read contents
+  contents: read
 
 jobs:
   scan-scheduled:
